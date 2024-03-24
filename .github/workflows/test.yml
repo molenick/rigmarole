@@ -1,0 +1,16 @@
+name: Test Rigmarole
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Rigmarole Action
+        uses: molenick/rigmarole@main
+        with:
+          path: .

@@ -1,0 +1,10 @@
+name: 'Rigmarole'
+description: 'Checks licenses using license_finder gem'
+author: 'Matt Olenick'
+inputs:
+  path:
+    description: 'The path to the directory to check licenses in'
+    required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
